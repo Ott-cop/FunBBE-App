@@ -1,30 +1,23 @@
 import { SafeAreaView } from "react-native";
 import { StyleSheet, View, Text } from "react-native";
 import globalStyle from "../../globalStyle";
-import Profissionais from "../QuemSomos/Profissionais";
 
-export default function Equipe() {
+export default function QuemSomos() {
 
     return (
         <SafeAreaView style={styles.container}>
             <View style={{flex: 1, alignItems: "center"}}>
                 <View style={styles.backgroundTitle}>
-                    <Text style={styles.title}>EQUIPE</Text>
+                    <Text style={styles.title}>QUEM SOMOS</Text>
                 </View>
                 <View style={{height: 40}} />
-                
-                <Text style={styles.subtitle}>CONHEÇA NOSSA <Text style={{color: globalStyle.secondary}}>EQUIPE!</Text></Text>
-                
-                <View style={{height: 20}} />
-
-                <View style={{gap: 30}}>
-                    <Profissionais nome="Emilia Santos Barreto" cargo="Professora Pré Escola"/>
-                    <Profissionais nome="Mariana Nahas Sabbadini" cargo="Professora Fundamental ll"/>
-                    <Profissionais nome="Angela Marta M. Ferraz" cargo="Professora Ensino Médio"/>
-                    <Profissionais nome="Angela Maria Galli" cargo="Professora Pré Escola"/> 
+                <View>
+                    <Text style={styles.subtitle}>A MELHOR <Text style={{color: globalStyle.secondary}}>ESCOLA</Text></Text>
                 </View>
-                
-                
+                <View style={{height: 20}} />
+                <View>
+                    <Text style={styles.paragraph}>A Escolas Integradas ”Prof. Nivaldo Salch Stipp” é mantida pela FunBBE (Fundação Barra Bonita de Ensino), e tem sua sede na cidade de Barra Bonita, no interior do estado de São Paulo. {"\n\n"}Fundada em 1963, era conhecida como Colégio Comercial de Barra Bonita, não possuindo ainda uma estrutura bem definida. Somente em 1966 surge como personalidade jurídica, adequando-se à Lei 493 do ano em vigência, sancionada pelo então prefeito da época, Dr. Clodoaldo Antonângelo. Passa então a dispor sobre a criação da Fundação Barra Bonita de Ensino, ou como é popularmente conhecida, FunBBE, que passa a ser a instituição mantenedora do Colégio Comercial e dos demais cursos implementados por ela. </Text>
+                </View>
             </View>
         </SafeAreaView>
     );
@@ -51,9 +44,7 @@ const styles = StyleSheet.create({
     },
     subtitle: {
         fontFamily: "Alegreya",
-        fontSize: 30,
-        alignItems: "center",
-        color: globalStyle.primary
+        fontSize: 30
     },
     paragraph: {
         fontFamily: "Alegreya",
